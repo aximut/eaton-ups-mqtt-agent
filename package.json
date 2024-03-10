@@ -1,0 +1,33 @@
+{
+  "name": "eaton-ups-mqtt-agent",
+  "version": "1.0.0",
+  "description": "An MQTT based agent software for your EATON UPS.",
+  "main": "index.js",
+  "bin": "bin.js",
+  "repository": {
+    "url": "https://github.com/aximut/eaton-ups-mqtt-agent",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "node bin",
+    "start-example": "node bin -f exampleConfig.json",
+    "build": "yarn run build-unix && yarn run build-win",
+    "build-unix": "pkg --compress Brotli --targets node16-linux,node16-macos .",
+    "build-win": "pkg --compress Brotli --targets node16-windows ."
+  },
+  "license": "AGPL-3.0-only",
+  "private": false,
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^7.0.1",
+    "is-super": "^1.0.1",
+    "lodash": "^4.17.21",
+    "mqtt": "^5.3.6",
+    "node-forge": "^1.3.1",
+    "system-shutdown": "^1.0.3"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
