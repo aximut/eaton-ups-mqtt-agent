@@ -55,7 +55,7 @@ async function main(config) {
     console.log(`Authenticating to UPS as "${clientId}".`)
     const client = mqtt.connect(`mqtt://${config.network.ip}:${config.network.port || 8883}`, {clientId, rejectUnauthorized: false, connectTimeout: 5000, reconnectPeriod: 1000, cert, key});
     const Shutdown = require("system-shutdown").Shutdown;
-    let shutdown = new Shutdown();
+    const shutdown = new Shutdown();
 
     client.subscribe([topicPowerServiceIdentification /*topicSuppliers, topicSupplierStatus*/], () => {
         console.log('Subscribed to outlet identification topic.')
