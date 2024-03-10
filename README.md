@@ -6,7 +6,7 @@ Shutdown clients gracefully on power outage before UPS power off.
 
 ## Download
 
-Download the latest release [here](/releases/latest). No installation is required.
+Download the latest release [here](https://github.com/aximut/eaton-ups-mqtt-agent/releases/latest). No installation is required.
 
 ## Usage
 
