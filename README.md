@@ -3,6 +3,7 @@
 An open-source MQTT based agent software for EATON UPS.
 Free your EATON UPS protected clients from proprietary software.
 Shutdown clients gracefully on power outage before UPS power off.
+
 An open alternative to the [Eaton Intelligent Power Protector (IPP)](https://www.eaton.com/in/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-intelligent-power-protector.html).
 
 Successfully tested on:
