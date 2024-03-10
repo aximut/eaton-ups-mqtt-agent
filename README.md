@@ -4,6 +4,10 @@ An open-source MQTT based agent software for EATON UPS.
 Free your EATON UPS protected clients from proprietary software.
 Shutdown clients gracefully on power outage before UPS power off.
 
+## Download
+
+Download the latest release [here](/releases/latest). No installation is required.
+
 ## Usage
 
 Show help using:
