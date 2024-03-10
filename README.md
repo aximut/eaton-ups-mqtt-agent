@@ -21,6 +21,24 @@ Show help using:
 eaton-ups-mqtt-agent -h
 ```
 
+### Systemd service
+
+On Linux, the node can be installed as a systemd service, for example using the following configuration:
+```
+[Unit]
+Description=EATON UPS MQTT Agent
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/eaton-ups-mqtt-agent <...>
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
 ## Disclaimer
 
 This project is not affiliated in any way with Eaton.
